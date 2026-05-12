@@ -18,8 +18,6 @@ if target:
         icmp_ping(target)
     else:
          icmp_ping_noroot(target)
-else:
-    print("no target found")
     
 if trtarget:
     traceroute(trtarget, privileged=isRoot)
