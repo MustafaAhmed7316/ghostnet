@@ -14,6 +14,8 @@ def arguments():
     
     parser.add_argument('-pt', '--port', type=str, help='usage: python core.py -p ')
     
+    parser.add_argument('-sn', '--subnet', type=str, help='usage: python core.py -sn 192.168.1.0/24 80')
+    
     if len(sys.argv) == 1:
         parser.print_help()
         sys.exit(1)
