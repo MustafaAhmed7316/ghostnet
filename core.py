@@ -14,6 +14,7 @@ trtarget = args.traceroute
 rstarget = args.resolve
 portscan = args.port
 subnetscan = args.subnet
+subnetport = args.port
 
 isRoot = os.geteuid() == 0
 
@@ -37,7 +38,4 @@ else:
         start_scan(portscan)
 
     if subnetscan:
-        if len(subnetscan) == 2:
-            subnet_scan(subnetscan[0], subnetscan[1])
-        else:
-            subnet_scan(subnetscan[0])
+        subnet_scan(subnetscan, subnetport)
