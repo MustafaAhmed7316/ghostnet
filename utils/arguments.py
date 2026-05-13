@@ -12,6 +12,8 @@ def arguments():
     
     parser.add_argument('-rs', '--resolve', type=str, help='usage: python core.py -rs <domain>, do not add https://')
     
+    parser.add_argument('-pt', '--port', type=str, help='usage: python core.py -p ')
+    
     if len(sys.argv) == 1:
         parser.print_help()
         sys.exit(1)
