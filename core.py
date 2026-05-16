@@ -14,8 +14,12 @@ trtarget = args.traceroute
 rstarget = args.resolve
 portscan = args.port
 subnetscan = args.subnet
+<<<<<<< HEAD
 subnetport = args.sport
 bannergrab = args.banner
+=======
+subnetport = args.port
+>>>>>>> a74155781c5818d7ff6a72a3440ed4eef5f2edd9
 
 isRoot = os.geteuid() == 0
 
@@ -40,6 +44,9 @@ else:
 
     if subnetscan:
         subnet_scan(subnetscan, subnetport)
+<<<<<<< HEAD
 
     if bannergrab:
         banner(bannergrab)
+=======
+>>>>>>> a74155781c5818d7ff6a72a3440ed4eef5f2edd9
